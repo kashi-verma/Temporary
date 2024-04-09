@@ -1,0 +1,354 @@
+//Products.tsx
+import img1 from "../images/Blue Buffalo Life Protection-hj2J213A.jpg";
+import img2 from "../images/FELINE_GREENIES-Akwn_Xe0.png";
+import img3 from "../images/Purina ONE Natural Dry Cat Food-dr3RkDkh.jpg"
+const Products = () => {
+  return (
+    
+    <>
+    <div className="Products">
+        <div className="container-fluid">
+            <div className="row">
+                <div className="col-md-4">
+                    <div className="products_col">
+                        <img src={img1} alt="" className="img-fluid"/>
+                        <div className="products_mid">
+                        <h4>Wag Dry Dog Food</h4>
+                        
+                        <div className="stars">
+                             <i className="fa-solid fa-star"></i>
+                             <i className="fa-solid fa-star"></i>
+                             <i className="fa-solid fa-star"></i>
+                             <i className="fa-solid fa-star"></i>
+                             <i className="fa-regular fa-star"></i>
+                        </div>
+                        <h5 className="pt-2">$70</h5>
+                        </div>
+                        <div className="btn1 text-center">View Cart</div>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="products_col">
+                        <img src={img2} alt="" className="img-fluid"/>
+                        <h4>Blue Buffalo Life Protection</h4>
+                        <h5>$150</h5>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="products_col">
+                        <img src={img3} alt="" className="img-fluid"/>
+                        <h4>Purina Natural Dry Cat Food</h4>
+                        <h5>$90</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </>
+  )
+}
+
+export default Products
+///Category.tsx
+import img1 from "../images/image1.png";
+import img2 from "../images/cat-NdYAGpYY.jpg";
+import img3 from "../images/fish-A3JtZiL5.jpg";
+import img4 from "../images/bird-eaVGVCYQ.jpg";
+
+
+const Category = () => {
+  return (
+    <>
+    <div className="category">
+        <div className="container-fluid category_main">
+            <h2 className="h2_main text-center">Top <span>Categories</span></h2>
+            <p className="text-center">Supertails is a popular online pet store in India that offers a wide range of pet supplies and products.
+They provide essentials for cats, dogs, and other small animals.Categories include pet food, toys, grooming products, and more.</p>
+            <div className="row align-items-center">
+                <div className="col-md-3">
+                    <div className="category_col">
+                        <img src={img1} alt="" className="img-fluid" />
+                        <h3>Dog</h3>
+                    </div>
+                </div>
+                <div className="col-md-3">
+                    <div className="category_col">
+                        <img src={img2} alt=""className="img-fluid" />
+                        <h3>Cat</h3>
+                    </div>
+                </div>
+                <div className="col-md-3">
+                    <div className="category_col">
+                        <img src={img3} alt=""className="img-fluid" />
+                        <h3>Fish</h3>
+                    </div>
+                </div>
+                <div className="col-md-3">
+                    <div className="category_col">
+                        <img src={img4}alt="" className="img-fluid"/>
+                        <h3>Parrot</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </>
+  )
+}
+
+export default Category
+//App.css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --dark-color: #8fef00cc;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #ac5151;
+}
+/* .Nav_main{
+  /* background-color: #5b3982; */
+  
+.navbar-brand img{
+  width: 30%;
+}
+.nav_last img{
+  margin: 0 0.8rem;
+}
+.nav_last img:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 0.3s linear;
+}
+/* Navbar Styling done here  */
+.Hero{
+  background-color: #5b3982;
+height: 645 px;
+padding: 2rem 0;
+/* margin: 2rem 0; */
+}
+/* .Hero_main{
+background-image: url(./images/dog-bg-ZFqMikDp.png);
+height: 500px;
+background-position: center;
+background-size: cover;
+padding: 4rem;
+} */
+.hero_coll{
+  color: #fff;
+}
+.hero_coll h3{
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.hero_coll h1{
+  font-weight: 600;
+  font-size: 3.7rem;
+}
+.hero_coll span{
+  color: #8fef00;
+}
+.btn1{
+  background: var(--dark-color);
+  padding: 0.8rem 1.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.btn1:hover {
+  transform: scale(1.05);
+  transition: 0.3s linear; 
+  background:  #000;
+}
+.Hero-main img{
+  width: 85%;
+}
+
+/* ************************************************ */
+.wave{
+  margin-top: -7.4rem ;
+}
+/* ************************************************ */
+.category_col img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 1rem 0;
+}
+/* ************************************************ */
+.h2_main{
+font-size: 2.4rem;
+font-weight: 600;
+}
+span{
+  color: var(--dark-color);
+}
+/* ************************************************ */
+.category_main{
+  padding: 5rem 10rem !important;
+}
+/* ************************************************ */
+.category_col img:hover{
+
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s linear;
+  opacity: 0.9;
+}
+.category_col h3{
+  font-size: 1.4rem;
+  text-align: center;
+  display: block;
+  padding: 0.5rem 0;
+}
+  //App.tsx
+  import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "./Components/navbar.tsx";
+import Navbar from "./Components/navbar.tsx";
+import Hero from "./Components/Hero.tsx";
+import Category from "./Components/Category.tsx"
+import Products from "./Components/Products.tsx"
+
+function App() {
+  return ( 
+    <>
+       <Navbar />
+       <Hero/>
+       <Category/>
+       <Products/>
+
+    </>
+  )
+};
+export default App;
+//index.html
+  <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> 
+         
+        
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2865/2865348.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>best pet food </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+  //Hero.tsx
+  import img1 from "../images/dog-bg-ZFqMikDp.png";
+import wave from "../images/layer-1MnSLsjs.png";
+const Hero = () => {
+  return (
+    <>
+      <div className="Hero">
+        <div className="container-fluid gx-0 Hero_main px-5 ">
+          <div className="row gx-0 align-items-center mx-3">
+            <div className="col-md-6">
+              <div className="hero_coll">
+                <h3>We care For Your Pet</h3>
+                <h1>
+                  Best <span>Pet Products</span> And Toys
+                </h1>
+                <p>
+                  At Pet Delight, we believe that every pet deserves the best.
+                  Thats why were committed to providing high-quality,
+                  nutritious, and delicious food for your furry friends. Our
+                  products are carefully formulated by veterinary nutritionists
+                  to ensure they meet the specific dietary needs of all pets,
+                  regardless of breed, age, or size. We offer a wide range of
+                  products, from dry kibble to wet food, treats, and dietary
+                  supplements. All our products are made with natural
+                  ingredients and are free from artificialpreservatives and
+                  colors. We source our ingredients responsibly, ensuring they
+                  are sustainable and ethically produced.
+                </p>
+                <button className="btn1">Shop Now</button>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="hero_coll2 text-end">
+                <img src={img1} alt="" className="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ********************************************** */}
+      <div className="wave">
+        <img src={wave} alt="" className="img-fluid" />
+      </div>
+      {/* ********************************************** */}
+    </>
+  );
+};
+
+export default Hero;
+  //navbar.tsx
+  import img1 from "../images/logo.png.jpg";
+const navbar = () => {
+  return (
+  <>
+<nav className="navbar navbar-expand-lg Nav_main">
+  <div className="container-fluid px-5 mx-3">
+    <a className="navbar-brand" href="#"><img src={img1} alt="" /></a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarScroll">
+      <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scrolls">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">About</a>
+        </li>
+       
+        <li className="nav-item">
+          <a className="nav-link" aria-disabled="true">Shop</a>
+        </li>
+      </ul>
+      <form className="d-flex nav_last" role="search">
+      <img src="	https://cdn-icons-png.flaticon.com/512/6372/6372641.png" 
+        width="20"
+        height="20"
+        alt=" "
+        title=" "
+        className="img-small-px2"></img>
+        <img src="https://cdn-icons-png.flaticon.com/512/2202/2202112.png" 
+        width="20"
+        height="20"
+        alt=" "
+        title=" "
+        className="img-small-px2"></img>{" "}
+        <img 
+        src="https://cdn-icons-png.flaticon.com/512/1136/1136140.png"
+        width="20"
+        height="20"
+        alt=" "
+        title=" "
+        className="img-small-px2">
+
+        </img>
+      </form>
+    </div>
+  </div>
+</nav>
+   </>
+  )
+};
+export default navbar;
